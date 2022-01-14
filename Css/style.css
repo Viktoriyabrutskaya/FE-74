@@ -1,0 +1,264 @@
+@font-face {
+  font-family: "Raleway";
+  src: url(../font/AnyConv.com__Raleway-Black.woff2);
+}
+@font-face {
+  font-family: "Kaushan Script";
+  src: url(../font/AnyConv.com__KaushanScript-Regular.woff2);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0 auto;
+}
+
+ul.hr {
+  text-align: right;
+}
+ul.hr li {
+  display: inline;
+  padding: 20px;
+}
+a {
+  text-decoration: none;
+}
+section.Mogo {
+  background-image: linear-gradient(
+      360deg,
+      rgba(237, 215, 137, 0.9) 0%,
+      rgba(233, 130, 131, 0.9) 100%
+    ),
+    url(../images/Rectangle\ 2.png);
+}
+.subtitle {
+  margin-top: 77px;
+  font-size: 64px;
+  line-height: 93px;
+  text-align: center;
+
+  color: #ffffff;
+}
+.caption {
+  font-size: 144px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  width: 70%;
+  margin: auto;
+}
+.line {
+  border-bottom: 4px solid rgb(243, 239, 239);
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  padding-top: 44px;
+}
+.btn {
+  border: 4px solid #ffffff;
+  box-sizing: border-box;
+  width: 260px;
+  padding: 10px;
+  margin-top: 72px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul.hr2 li {
+  display: inline-block;
+  padding: 40px;
+  width: 22%;
+
+  margin-top: 50px;
+}
+section.story {
+  background-color: #ffffff;
+}
+.block {
+  padding-bottom: 50px;
+}
+.text {
+  text-align: center;
+  padding-top: 42px;
+  font-weight: normal;
+  font-size: 25px;
+}
+.title {
+  text-align: center;
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 42px;
+  font-size: 30px;
+}
+.line2 {
+  border-bottom: 4px solid rgb(238, 154, 154);
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  padding-top: 30px;
+}
+
+.text2 {
+  padding-top: 30px;
+  font-size: 18px;
+  line-height: 21px;
+
+  text-align: center;
+}
+
+.image {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  padding-left: 35px;
+  max-width: 30%;
+  display: inline-block;
+}
+section.stats {
+  background-color: #95e1d3;
+}
+
+.brd1 {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  width: 234px;
+  height: 250px;
+  text-align: center;
+  display: table-cell;
+}
+.brd2 {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  width: 234px;
+  height: 250px;
+  text-align: center;
+  display: table-cell;
+}
+.brd3 {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  width: 234px;
+  height: 250px;
+  text-align: center;
+  display: table-cell;
+}
+.brd4 {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  width: 234px;
+  height: 250px;
+  text-align: center;
+  display: table-cell;
+}
+.brd5 {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  width: 234px;
+  height: 250px;
+  text-align: center;
+  display: table-cell;
+}
+section.services {
+  background-color: #ffffff;
+}
+.pic {
+  float: left;
+}
+
+.aside.aside {
+  display: inline-block;
+  padding-top: 60px;
+  padding-right: 30px;
+  text-align: center;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+.desc {
+  padding-top: 30px;
+}
+section.devices {
+  background: url(../images/unsplash_lpjb_UMOyx8.png);
+  background-size: 100% 100%;
+}
+
+.picture {
+  margin-top: 50px;
+  width: 50%;
+  border: 20px solid #0f1111e3;
+  border-radius: 20px;
+}
+.gallery {
+  position: relative;
+  left: 300px;
+  top: 10px;
+}
+
+.picture1 {
+  position: absolute;
+  max-width: 15%;
+  max-height: 70%;
+  left: 450px;
+  top: 245px;
+}
+section.what {
+  background: #fffdfd;
+}
+.man {
+  float: left;
+  padding-top: 70px;
+  margin-bottom: 150px;
+}
+section.message {
+  background: #f5f1f1;
+
+  padding-top: 5%;
+  padding-left: 10%;
+}
+.jon {
+  float: left;
+  width: 15%;
+  padding-right: 2%;
+  padding-bottom: 25px;
+}
+.mes {
+  display: inline-block;
+}
+.divider {
+  border-bottom: 4px solid rgb(224, 99, 147);
+
+  margin-left: 170px;
+  width: 6%;
+  padding-top: 55px;
+}
+.text3 {
+  text-align: left;
+  width: 80%;
+  padding-top: 5px;
+}
+section.team {
+  background: #555353;
+}
+.subject {
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  width: 31%;
+}
+.name {
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  width: 31%;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
