@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wraper {
+  display: flex;
+
+  justify-content: space-between;
+}
+.block {
+  border: 1px solid blue;
+  padding: 3rem 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 55%;
+}
+.subinner {
+  display: flex;
+  gap: 1rem;
+}
+.subinner > .block {
+  flex: 1;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.wraper > .block {
+  flex-basis: 40%;
+}
