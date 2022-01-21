@@ -1,11 +1,16 @@
 @font-face {
-  font-family: "Raleway";
-  src: url(../font/AnyConv.com__Raleway-Black.woff2);
+  font-family: "Montserat";
+  src: url(../font/Montserrat-ExtraBold.woff);
 }
 @font-face {
-  font-family: "Kaushan Script";
-  src: url(../font/AnyConv.com__KaushanScript-Regular.woff2);
+  font-family: "Kaushan";
+  src: url(../font/KaushanScript-Regular.woff);
 }
+@font-face {
+  font-family: "Raleway";
+  src: url(../font/Raleway-Bold.woff);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,7 +18,7 @@
 }
 .container {
   max-width: 1200px;
-  padding: 0 16px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -44,41 +49,46 @@ section.Mogo {
   font-size: 64px;
   line-height: 93px;
   text-align: center;
-
+  font-family: "Kaushan";
   color: #ffffff;
 }
+
 .caption {
-  font-size: 144px;
   text-align: center;
   text-transform: uppercase;
-
+  font-family: "Montserat";
+  font-size: 144px;
+  line-height: 176px;
   color: #ffffff;
-  width: 70%;
+
   margin: auto;
 }
+.line_ {
+  display: flex;
+}
 .line {
-  border-bottom: 4px solid rgb(243, 239, 239);
+  border-bottom: 5px solid rgb(243, 239, 239);
   margin-left: auto;
   margin-right: auto;
   width: 15%;
   padding-top: 44px;
 }
 .btn {
-  border: 4px solid #ffffff;
+  border: 5px solid #ffffff;
   box-sizing: border-box;
-  width: 260px;
-  padding: 10px;
+  width: 400px;
+  padding: 25px;
   margin-top: 72px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  font-family: "Raleway";
+  font-size: 24px;
 }
-
 ul.hr2 li {
   display: inline-block;
   padding: 40px;
   width: 22%;
-
   margin-top: 50px;
 }
 section.story {
@@ -108,80 +118,55 @@ section.story {
   width: 15%;
   padding-top: 30px;
 }
-
 .text2 {
   padding-top: 30px;
   font-size: 18px;
   line-height: 21px;
-
   text-align: center;
 }
-
+.img {
+  display: flex;
+  justify-content: space-evenly;
+}
 .image {
-  padding-top: 40px;
-  padding-bottom: 60px;
-  padding-left: 35px;
-  max-width: 30%;
-  display: inline-block;
+  flex-basis: auto;
 }
 section.stats {
   background-color: #95e1d3;
 }
-
+.brd {
+  display: flex;
+  justify-content: center;
+}
 .brd1 {
   border: 1px solid #ffffff;
   box-sizing: border-box;
   width: 234px;
   height: 250px;
   text-align: center;
-  display: table-cell;
+  padding-top: 6em;
 }
-.brd2 {
-  border: 1px solid #ffffff;
-  box-sizing: border-box;
-  width: 234px;
-  height: 250px;
-  text-align: center;
-  display: table-cell;
-}
-.brd3 {
-  border: 1px solid #ffffff;
-  box-sizing: border-box;
-  width: 234px;
-  height: 250px;
-  text-align: center;
-  display: table-cell;
-}
-.brd4 {
-  border: 1px solid #ffffff;
-  box-sizing: border-box;
-  width: 234px;
-  height: 250px;
-  text-align: center;
-  display: table-cell;
-}
-.brd5 {
-  border: 1px solid #ffffff;
-  box-sizing: border-box;
-  width: 234px;
-  height: 250px;
-  text-align: center;
-  display: table-cell;
-}
+
 section.services {
   background-color: #ffffff;
 }
-.pic {
-  float: left;
+
+.aside_ {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.aside.aside {
-  display: inline-block;
+.aside {
+  flex-basis: auto;
   padding-top: 60px;
   padding-right: 30px;
   text-align: center;
   padding-bottom: 50px;
   margin-bottom: 50px;
+}
+.text4 {
+  text-transform: uppercase;
 }
 .desc {
   padding-top: 30px;
@@ -190,25 +175,23 @@ section.devices {
   background: url(../images/unsplash_lpjb_UMOyx8.png);
   background-size: 100% 100%;
 }
-
+.gallery {
+  display: flex;
+  justify-content: center;
+}
 .picture {
   margin-top: 50px;
   width: 50%;
   border: 20px solid #0f1111e3;
   border-radius: 20px;
 }
-.gallery {
+.im {
   position: relative;
-  left: 300px;
-  top: 10px;
 }
-
 .picture1 {
   position: absolute;
-  max-width: 15%;
-  max-height: 70%;
-  left: 450px;
-  top: 245px;
+  left: 20px;
+  top: 310px;
 }
 section.what {
   background: #fffdfd;
@@ -220,7 +203,6 @@ section.what {
 }
 section.message {
   background: #f5f1f1;
-
   padding-top: 5%;
   padding-left: 10%;
 }
@@ -233,9 +215,9 @@ section.message {
 .mes {
   display: inline-block;
 }
+
 .divider {
   border-bottom: 4px solid rgb(224, 99, 147);
-
   margin-left: 170px;
   width: 6%;
   padding-top: 55px;
@@ -251,6 +233,7 @@ section.team {
 .subject {
   text-transform: uppercase;
   text-align: center;
+
   display: inline-block;
   width: 31%;
 }
