@@ -1,0 +1,33 @@
+.container {
+  padding: 20px;
+  border: 1px solid;
+  margin-bottom: 20px;
+}
+li:not(.text) {
+  color: rgb(247, 33, 33);
+}
+p + span {
+  color: rgb(247, 33, 33);
+}
+.span:nth-child(even) {
+  background: rgb(243, 20, 4);
+}
+.span2:nth-child(4n + 3) {
+  background: rgb(250, 8, 0);
+}
+
+.span3:nth-child(8) {
+  background: rgb(236, 6, 6);
+}
+button:first-child {
+  background: rgb(255, 61, 47);
+}
+button:last-child {
+  background: rgb(255, 75, 3);
+}
+.span5:not(.span4) {
+  color: rgb(247, 33, 33);
+}
+.col:not(.no-color) {
+  color: rgb(250, 8, 0);
+}
