@@ -1,33 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .container {
-  padding: 20px;
-  border: 1px solid;
-  margin-bottom: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
-li:not(.text) {
-  color: rgb(247, 33, 33);
+body {
+  display: flex;
+  justify-content: center;
 }
-p + span {
-  color: rgb(247, 33, 33);
+.wrapper {
+  max-width: 357px;
+  max-height: 100vh;
+  padding: 45px 38px 30px;
+
+  font-family: "Robbo";
+  color: rgb(10, 8, 4);
 }
-.span:nth-child(even) {
-  background: rgb(243, 20, 4);
+.wrapper a {
+  color: rgb(235, 36, 145);
 }
-.span2:nth-child(4n + 3) {
-  background: rgb(250, 8, 0);
+.wrapper__logo {
+  margin-bottom: 95px;
+  text-align: center;
+}
+.wrapper__form {
+  margin-bottom: 65px;
+}
+.wrapper__form-btn {
+  padding: 16px;
+  background: rgb(212, 18, 18);
+  border: none;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  cursor: pointer;
+}
+.wrapper__form-btn--blue {
+  background-color: rgb(68, 68, 219);
+}
+.wrapper__form-btn--orange {
+  background-color: rgb(219, 125, 36);
 }
 
-.span3:nth-child(8) {
-  background: rgb(236, 6, 6);
+.form__title p {
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 57px;
 }
-button:first-child {
-  background: rgb(255, 61, 47);
+
+.form__item {
+  margin-bottom: 20px;
+  position: relative;
 }
-button:last-child {
-  background: rgb(255, 75, 3);
+.form-item:last-of-type {
+  margin-bottom: 18px;
 }
-.span5:not(.span4) {
-  color: rgb(247, 33, 33);
+
+.form-item input {
+  padding: 14px 24px 16px;
+  border: 1px solid currentColor;
 }
-.col:not(.no-color) {
-  color: rgb(250, 8, 0);
+.form-item input::placeholder {
+  color: rgba(26, 26, 26, 0.56);
+}
+.form-item button {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+}
+.form__content {
+  display: flex;
+  flex-direction: column;
+}
+.form__content > button {
+  margin-bottom: 16px;
+
+  color: #fff;
+  text-transform: uppercase;
+}
+.form__content > a {
+  align-self: flex-end;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+}
+.form__buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form__buttons > * {
+  flex: 1;
+}
+.form__buttons button:not(last-of-type) {
+  margin-right: 20px;
+}
+
+.form__buttons button {
+  margin-bottom: 25px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__buttons > p {
+  flex: 100%;
+}
+.wrapper__footer {
+  font-size: 14px;
+  line-height: 16px;
 }
