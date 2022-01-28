@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Montserat";
-  src: url(../font/Montserrat-ExtraBold.woff);
+  src: url(../font/Montserrat-Bold.woff);
 }
 @font-face {
   font-family: "Kaushan";
@@ -24,21 +24,22 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 900;
 }
 .container {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
+.wraper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+}
 .container_Mo {
   max-width: 1000px;
   padding: 0 15px;
   margin: 0 auto;
-}
-.logo {
-  max-width: 100%;
-  height: auto;
 }
 
 ul.hr {
@@ -47,7 +48,7 @@ ul.hr {
   justify-content: flex-end;
 }
 ul.hr li {
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 li:last-child {
   margin-right: 0;
@@ -132,20 +133,58 @@ ul.hr2 li {
   width: 22%;
   margin-top: 50px;
 }
-section.story {
+section.story_about_us {
   background-color: #ffffff;
+}
+.img {
+  position: relative;
+  width: 370px;
+  display: flex;
+}
+.img_img:not(:last-child) {
+  margin-right: 1rem;
+}
+.img:hover .img_hover {
+  opacity: 1;
+}
+.img_hover {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    360deg,
+    rgba(237, 215, 137, 0.9) 0%,
+    rgba(233, 130, 131, 0.9) 100%
+  );
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
 }
 
 .text {
   text-align: center;
   padding-top: 42px;
+
+  padding-top: 42px;
   font-weight: normal;
-  font-size: 25px;
+  font-size: 30px;
+  line-height: 44px;
+
+  font-family: "Kaushan";
 }
 .title {
   text-align: center;
   padding-top: 20px;
   text-transform: uppercase;
+  font-family: "Raleway";
+
+  font-size: 36px;
+  line-height: 42px;
   font-weight: 900;
   line-height: 42px;
   font-size: 30px;
@@ -159,14 +198,11 @@ section.story {
 }
 .text2 {
   padding-top: 30px;
+  padding-bottom: 6rem;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-}
-.image {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 70px;
+  font-family: "Raleway";
 }
 
 section.stats {
@@ -186,50 +222,50 @@ section.stats {
   padding-top: 6em;
 }
 
-section.services {
+section.amazing_services {
   background-color: #ffffff;
 }
 
-.aside_ {
+.content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding-top: 80px;
+  justify-content: space-between;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
-
-.aside {
+.box {
   display: flex;
-  flex-direction: column;
-  padding-top: 60px;
-  padding-right: 30px;
-  text-align: center;
-  padding-bottom: 50px;
-  margin-bottom: 50px;
+  justify-content: center;
+  width: 30%;
+  padding-bottom: 60px;
+}
+.icon {
+  padding-right: 2rem;
+  padding-bottom: 5rem;
 }
 
-.text4 {
-  text-transform: uppercase;
-}
-.desc {
-  padding-top: 30px;
-}
 section.devices {
   background: url(../images/unsplash_lpjb_UMOyx8.png);
   background-size: 100% 100%;
 }
 .gallery {
-  display: flex;
-  justify-content: center;
   position: relative;
 }
 .picture {
-  margin-top: 50px;
-
+  display: flex;
+  justify-content: center;
+  flex: 1 1 auto;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+.picture_ {
   border: 20px solid #0f1111e3;
   border-radius: 20px;
 }
 .im {
   position: absolute;
+  display: flex;
+  flex: 1 1 auto;
   left: 750px;
   top: 0px;
 }
@@ -238,27 +274,23 @@ section.devices {
   left: 20px;
   top: 310px;
 }
-section.what {
+section.what_we_do {
   background: #fffdfd;
 }
 .man {
-  float: left;
-  padding-top: 70px;
-  margin-bottom: 150px;
+  display: flex;
+  justify-content: flex-start;
+
+  padding-bottom: 100px;
 }
 section.message {
   background: #f5f1f1;
   padding-top: 5%;
   padding-left: 10%;
 }
-.jon {
-  float: left;
-  width: 15%;
-  padding-right: 2%;
-  padding-bottom: 25px;
-}
 .mes {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
 }
 
 .divider {
@@ -272,19 +304,44 @@ section.message {
   width: 80%;
   padding-top: 5px;
 }
-section.team {
+section.meet_our_team {
   background: #555353;
 }
-.image {
+.item {
+  position: relative;
+  width: 370px;
   display: flex;
-  justify-content: space-between;
+}
+.item_image:not(:last-child) {
+  margin-right: 1rem;
+}
+.item:hover .item__hover {
+  opacity: 1;
 }
 
-.item_image {
+.item__hover {
   position: absolute;
-  left: 150px;
-  z-index: 2;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    360deg,
+    rgba(237, 215, 137, 0.9) 0%,
+    rgba(233, 130, 131, 0.9) 100%
+  );
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
 }
+
+.item__hover a {
+  width: 20px;
+  display: flex;
+}
+
 .subject {
   text-transform: uppercase;
   text-align: center;
