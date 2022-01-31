@@ -274,15 +274,16 @@ section.devices {
   left: 20px;
   top: 310px;
 }
-section.what_we_do {
+section.servise {
   background: #fffdfd;
 }
-.man {
+.sidebar__img {
   display: flex;
   justify-content: flex-start;
 
   padding-bottom: 100px;
 }
+
 section.message {
   background: #f5f1f1;
   padding-top: 5%;
