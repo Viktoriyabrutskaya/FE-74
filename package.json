@@ -1,0 +1,24 @@
+{
+  "name": "fe74",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass -w Css/style.scss dist/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Viktoriyabrutskaya/FE-74.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Viktoriyabrutskaya/FE-74/issues"
+  },
+  "homepage": "https://github.com/Viktoriyabrutskaya/FE-74#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.2",
+    "node-sass": "^7.0.1",
+    "postcss-cli": "^9.1.0"
+  }
+}
